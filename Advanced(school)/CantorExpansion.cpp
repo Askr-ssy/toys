@@ -26,8 +26,13 @@ int ce(std::vector<int> nums){
     return sum;
 }
 
-auto dece(int n,std::vector<int> ums){
-    (void)0;
+auto dece(int n,std::vector<int> nums){
+    std::vector<int> result {};
+    --n;
+    std::cout<<nums[nums.size()-2]<<std::endl;
+    while(n){
+        // n
+    }
 }
 
 
@@ -36,5 +41,6 @@ int main(void){
         3,4,1,5,2
     };
     std::cout<<ce(nums)+1<<std::endl;
+    dece(ce(nums),{1,2,3,4,5});
     return 0;
 }
