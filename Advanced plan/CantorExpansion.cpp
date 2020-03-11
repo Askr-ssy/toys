@@ -1,7 +1,7 @@
 #include<set>
 #include<unordered_set>
 #include<iostream>
-#include <iterator>
+#include<iterator>
 #include<vector>
 #include<cmath>
 #include<algorithm>
@@ -26,13 +26,20 @@ int ce(std::vector<int> nums){
     return sum;
 }
 
-auto dece(int n,std::vector<int> nums){
+auto dece(int n,const std::vector<int> nums){
     std::vector<int> result {};
-    --n;
-    std::cout<<nums[nums.size()-2]<<std::endl;
-    while(n){
-        // n
+    int j = nums.size()-1;
+    std::vector<int> temp_result  = nums;
+    while(true){
+        if (--j <0)break;
+        int _recv = recv(nums[j]);
+        int temp = n / _recv;        
+        result.push_back(temp_result[temp]);
+        temp_result.erase(temp_result.begin()+temp);
+        n = n % _recv;
     }
+    result.push_back(temp_result[0]);
+    return result;
 }
 
 
@@ -41,6 +48,8 @@ int main(void){
         3,4,1,5,2
     };
     std::cout<<ce(nums)+1<<std::endl;
-    dece(ce(nums),{1,2,3,4,5});
+    std::vector<int> result = dece(ce(nums),{1,2,3,4,5});
+    for (auto x : result)std::cout<<x<<" ";
+
     return 0;
 }
