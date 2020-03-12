@@ -12,6 +12,6 @@ int nmx(int n,int m,int x){
 }
 
 int main(void){
-    nmx();
+    //nmx();
     return 0;
 }

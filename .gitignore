@@ -1,3 +1,8 @@
 *.x
 .vscode
-*.o
+.vs
+build/*
+debug/*
+*.sln
+*.vcxproj
+*.vcxproj.*
