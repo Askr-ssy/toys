@@ -5,22 +5,25 @@
 #include<map>
 #include<string>
 #include<set>
-#include"askr/StringUtil.hpp"
+#include "include//askr/StringUtil.hpp"
 
 std::map<std::string,double> load_dict(const std::string file_path,std::map<std::string,double> &dict,int flag=3,size_t maxsplit=std::string::npos){
     std:: ifstream file = std::ifstream(file_path,std::ios::in);   // TODO 编码问题
     std::string line;
     std::vector<std::string> res;
     try
+    // 增加容错
     {   
         while (std::getline(file,line)){
-            askr::Trim(line);
-            res=askr::Split(line," ",maxsplit);
+            std::cout<<line<<std::endl;
             try{
+                askr::Trim(line);
+                res=askr::Split(line," ",maxsplit);
                 dict[res[0]]=std::stod(res[flag]);
+
             }
-            catch(const std::exception& e){
-                std::cerr<<"error :"<<e.what()<<std::endl;
+            catch(...){
+                std::cout<<"error :"<<line<<std::endl;
                 continue;
             }
                 
