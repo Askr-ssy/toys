@@ -1,0 +1,10 @@
+*.x
+.vscode
+.vs 
+build/*
+debug/*
+*.sln
+*.vcxproj
+*.vcxproj.*
+venv/*
+__pycache__
