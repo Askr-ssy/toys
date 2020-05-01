@@ -1,0 +1,9 @@
+setup.py
+libanalysepy/__init__.py
+libanalysepy.egg-info/PKG-INFO
+libanalysepy.egg-info/SOURCES.txt
+libanalysepy.egg-info/dependency_links.txt
+libanalysepy.egg-info/not-zip-safe
+libanalysepy.egg-info/requires.txt
+libanalysepy.egg-info/top_level.txt
+src/main.cpp

@@ -8,6 +8,7 @@
 #include"utils.hpp"
 #include<algorithm>
 #include<utility>
+#include"cppjieba/TextRankExtractor.hpp"
 namespace nlp{
     using std::string;
 
@@ -26,9 +27,10 @@ namespace nlp{
                   const string &inverse_path
             ){}
             model(){
-                this->check_initialized();
+                // this->check_initialized();
             }
             ~model(){}
+
             //TODO
             bool initialize(){
                 this->load_data();
@@ -204,7 +206,7 @@ namespace nlp{
                 std::string toExtractor{};
                 std::vector<std::pair<std::string,double>> keyword;
                 toExtractor = title+content;
-                this->keywordExtractor.Extract(toExtractor,keyword,100);
+                // this->keywordExtractor.Extract(toExtractor,keyword,100);
                 for (std::pair<std::string,double> item:keyword){
                     if (this->stop_words.count(item.first) || this->clear_words.count(item.first))
                         continue;
@@ -347,7 +349,7 @@ namespace nlp{
 
             std::regex zh{"[\u4e00-\u9fa5]"};
             std::regex weibo_split{",，.。!！？!;；"};
-            cppjieba::TextRankExtractor keywordExtractor{this->jieba_dict_path,this->jieba_model_path,this->jieba_stopWord_path};
+            // cppjieba::TextRankExtractor keywordExtractor{this->jieba_dict_path,this->jieba_model_path,this->jieba_stopWord_path};
             std::regex http{};
             double news_pos_threhold{0.2};
             double news_neg_threhold{-0.14};

@@ -1,14 +1,14 @@
 // debug file
 #include<iostream>
 #include<regex>
-#include"nlp.hpp"
-#include"include/cppjieba/Jieba.hpp"
-#include"include/cppjieba/TextRankExtractor.hpp"
-const std::string dict_path = "./data/dict/jieba.dict.utf8";
-const std::string model_path = "./data/dict/hmm_model.utf8";
-const std::string user_dict_path = "./data/dict/user.dict.utf8";
-const std::string idf_path = "./data/dict/idf.utf8";
-const std::string stopWord_path = "./data/dict/stop_words.utf8";
+#include"analyse/nlp.hpp"
+#include"cppjieba/Jieba.hpp"
+#include"cppjieba/TextRankExtractor.hpp"
+const std::string dict_path = "./dict/jieba.dict.utf8";
+const std::string model_path = "./dict/hmm_model.utf8";
+const std::string user_dict_path = "./dict/user.dict.utf8";
+const std::string idf_path = "./dict/idf.utf8";
+const std::string stopWord_path = "./dict/stop_words.utf8";
 int main(void){
     std::cout<<"hello"<<std::endl;
     try{
