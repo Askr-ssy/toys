@@ -48,8 +48,8 @@ namespace nlp{
             }
 
             // 模型入口
-            int predict(std::map<string,string> &input_content){
-                return 124;
+            std::map<string,string> predict(std::map<string,string> &input_content){
+                return input_content;
                 std::string content{""};
                 std::vector<std::pair<std::string,double>> content_cut{};
                 std::vector<std::pair<std::string,double>> content_tags{};

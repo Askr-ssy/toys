@@ -17,7 +17,7 @@ const string STOP_WORD_PATH = string(SITE_PACKAGE_PATH) + string("analyse/dict/s
 
 struct model{
     nlp::model _model;
-    int predict(std::map<string,string> data){
+    std::map<string,string> predict(std::map<string,string> data){
         return this->_model.predict(data);
     }
 };
@@ -28,9 +28,8 @@ namespace analyse{
     std::map<string,string> input_data;
 
     model *_model = new model;
-    int predict(){
-        std::map<string,string> input_data;
-        return _model->predict(input_data);
+    std::map<string,string> predict(std::map<string,string> data){
+        return _model->predict(data);
     }
 }
 
@@ -40,6 +39,6 @@ string ping(){
 PYBIND11_MODULE(cppanalyse,m){
     m.doc() = "python extension for cppanalyse";
 
-    m.def("predict",& analyse::predict);
-    m.def("ping",& ping);
+    m.def("predict",&analyse::predict);
+    m.def("ping",&ping);
 }
