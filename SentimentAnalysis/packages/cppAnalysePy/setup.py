@@ -1,4 +1,4 @@
-from setuptools import setup,Extension
+from setuptools import setup, Extension
 from setuptools.command.build_ext import build_ext
 import sys
 import setuptools
@@ -7,32 +7,32 @@ import os
 from distutils.sysconfig import get_python_lib
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
-SITE_PACKAGE_DIR = os.path.join(ROOT_DIR,"")
+SITE_PACKAGE_DIR = os.path.join(ROOT_DIR, "")
 
 
 class get_pybind_include(object):
 
-    def __init__(self,user=False):
-        self.user=user
+    def __init__(self, user=False):
+        self.user = user
 
     def __str__(self):
         import pybind11
         return pybind11.get_include(self.user)
 
 
-
 ext_modules = [
     Extension(
-        "libanalyse",
+        "cppanalyse",
         ["src/main.cpp"],
         include_dirs=[
             get_pybind_include(),
             get_pybind_include(user=True),
-            "analyse/include"
+            "cppanalyse/include"
         ],
         language="c++"
     )
 ]
+
 
 def has_flag(compiler, flagname):
     """Return a boolean indicating whether a flag name is supported on
@@ -47,6 +47,7 @@ def has_flag(compiler, flagname):
             return False
     return True
 
+
 def cpp_flag(compiler):
     """Return the -std=c++[11/14] compiler flag.
     The c++14 is prefered over c++11 (when it is available).
@@ -59,20 +60,22 @@ def cpp_flag(compiler):
         raise RuntimeError('Unsupported compiler -- at least C++11 support '
                            'is needed!')
 
+
 class Build_Ext(build_ext):
     c_opts = {
-        "msvc":["/EHsc"],
-        "unix":[]
+        "msvc": ["/EHsc"],
+        "unix": []
     }
     if sys.platform == "darwin":
-        c_opts["unix"].extend(["-stdlib=libc++","-mmacosx-version-min=10.7"])
-    
+        c_opts["unix"].extend(["-stdlib=libc++", "-mmacosx-version-min=10.7"])
+
     def build_extensions(self):
         ct = self.compiler.compiler_type
-        opts = self.c_opts.get(ct,[])
+        opts = self.c_opts.get(ct, [])
         if ct == "unix":
-            opts.append("-DVERSION_INFO='%s'" %self.distribution.get_version())
-            opts.append('-DSITE_PACKAGE_PATH="%s"'% SITE_PACKAGE_DIR)
+            opts.append("-DVERSION_INFO='%s'" %
+                        self.distribution.get_version())
+            opts.append('-DSITE_PACKAGE_PATH="%s"' % SITE_PACKAGE_DIR)
             opts.append(cpp_flag(self.compiler))
             opts.append("-O3")
             if has_flag(self.compiler, '-fvisibility=hidden'):
@@ -81,6 +84,7 @@ class Build_Ext(build_ext):
         for ext in self.extensions:
             ext.extra_compile_args = opts
         build_ext.build_extensions(self)
+
 
 install_requires = ["pybind11>2.2"]
 
@@ -93,17 +97,17 @@ if sys.version_info[0] < 3:
     extras_require["test"].append("pathlib2")
 
 setup(
-    name="libanalysepy",
+    name="cppanalysepy",
     version="1.0.0",
     author="askr-ssy",
     ext_modules=ext_modules,
     install_requires=install_requires,
-    packages=["libanalysepy","analyse.dict"],
+    packages=["cppanalysepy", "cppanalyse.dict"],
     packages_data={
-        "analyse.dict":["*.utf8","*.txt"]
+        "cppanalyse.dict": ["*.utf8", "*.txt"]
     },
     include_package_data=True,
     extras_require=extras_require,
-    cmdclass={"build_ext":Build_Ext},
+    cmdclass={"build_ext": Build_Ext},
     zip_safe=False
 )
