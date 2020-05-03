@@ -3,6 +3,7 @@
 from fastapi import FastAPI
 # from cppnlp import model
 from pydantic import BaseModel
+import cppanalyse
 
 
 class Nlp_Context(BaseModel):
@@ -10,7 +11,16 @@ class Nlp_Context(BaseModel):
     content: str = None
     cid: str = None
     type: str = None
-    is_debug: bool = False
+    is_debug: str = None
+
+    def __dict__(self):
+        return {
+            "title": self.title,
+            "content": self.content,
+            "cid": self.cid,
+            "type": self.type,
+            "is_debug": self.is_debug
+        }
 
 
 app = FastAPI()
@@ -24,4 +34,4 @@ def read_root():
 @app.post("/")
 def read_root(item: Nlp_Context):
     # model.predict() 接入模型
-    return item
+    return cppanalyse.predict(dict(item))
