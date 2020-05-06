@@ -6,3 +6,4 @@ debug/*
 *.sln
 *.vcxproj
 *.vcxproj.*
+*.whl
