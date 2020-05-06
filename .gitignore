@@ -7,3 +7,4 @@ debug/*
 *.vcxproj
 *.vcxproj.*
 *.whl
+*.out
