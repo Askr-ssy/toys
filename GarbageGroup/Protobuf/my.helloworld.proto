@@ -1,0 +1,8 @@
+syntax="proto3";
+package my;
+message helloworld
+{
+    int32 id = 1;
+    string str = 2;
+    int32 wow = 3;
+}
