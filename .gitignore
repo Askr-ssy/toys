@@ -8,3 +8,5 @@ debug/*
 *.vcxproj.*
 *.whl
 *.out
+
+pyvenv/*
