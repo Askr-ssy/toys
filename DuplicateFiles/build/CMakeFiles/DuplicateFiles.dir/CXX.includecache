@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.cpp
+DuplicateFiles.h
+/home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.h
+filesystem
+-
+iostream
+-
+vector
+-
+map
+-
+iostream
+-
+
+/home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.h
+iostream
+-
+
