@@ -1,1 +1,1 @@
-/bin/g++-9  -O3 -DNDEBUG   CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.o  -o DuplicateFiles 
+/usr/bin/c++     CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.o  -o DuplicateFiles 

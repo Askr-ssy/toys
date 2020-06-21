@@ -12,6 +12,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_definitions("-O3")
 add_definitions("-g")
 
+
 include_directories(./include)
 # 将源代码添加到此项目的可执行文件。
 add_executable (DuplicateFiles "DuplicateFiles.cpp" "DuplicateFiles.h")

@@ -1,0 +1,328 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/cmake 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+CMake Error: The source directory "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/out/build/WSL-GCC-Debug/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" is a file, not a directory.
+Specify --help for usage, or press the help button on the CMake GUI.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/cmake 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+CMake Error: The source directory "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/out/build/WSL-GCC-Debug/CMakeFiles/3.16.3/CompilerIdCXX/-c" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/cmake 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+CMake Error: The source directory "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/out/build/WSL-GCC-Debug/CMakeFiles/3.16.3/CompilerIdCXX/--c++" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/cmake 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+CMake Error: The source directory "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/out/build/WSL-GCC-Debug/CMakeFiles/3.16.3/CompilerIdCXX/--ec++" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/cmake 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+CMake Error: The source directory "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/out/build/WSL-GCC-Debug/CMakeFiles/3.16.3/CompilerIdCXX/-mcpu=cortex-m3" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/cmake 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+CMake Error: The source directory "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/out/build/WSL-GCC-Debug/CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" is a file, not a directory.
+Specify --help for usage, or press the help button on the CMake GUI.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/cmake 
+Build flags: 
+Id flags: -c 
+
+The output was:
+1
+CMake Error: The source directory "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/out/build/WSL-GCC-Debug/CMakeFiles/3.16.3/CompilerIdCXX/-c" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/cmake 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+1
+CMake Error: The source directory "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/out/build/WSL-GCC-Debug/CMakeFiles/3.16.3/CompilerIdCXX/--c++" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/cmake 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+1
+CMake Error: The source directory "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/out/build/WSL-GCC-Debug/CMakeFiles/3.16.3/CompilerIdCXX/--ec++" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /usr/bin/cmake 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+1
+CMake Error: The source directory "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/out/build/WSL-GCC-Debug/CMakeFiles/3.16.3/CompilerIdCXX/-mcpu=cortex-m3" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Usage
+
+  cmake [options] <path-to-source>
+  cmake [options] <path-to-existing-build>
+  cmake [options] -S <path-to-source> -B <path-to-build>
+
+Specify a source directory to (re-)generate a build system for it in the
+current working directory.  Specify an existing build directory to
+re-generate its build system.
+
+Run 'cmake --help' for more information.
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Usage
+
+  cmake [options] <path-to-source>
+  cmake [options] <path-to-existing-build>
+  cmake [options] -S <path-to-source> -B <path-to-build>
+
+Specify a source directory to (re-)generate a build system for it in the
+current working directory.  Specify an existing build directory to
+re-generate its build system.
+
+Run 'cmake --help' for more information.
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: /mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/out/build/WSL-GCC-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b8a0d && [1/2] Building CXX object CMakeFiles/cmTC_b8a0d.dir/testCXXCompiler.cxx.o
+FAILED: CMakeFiles/cmTC_b8a0d.dir/testCXXCompiler.cxx.o 
+/usr/bin/cmake     -o CMakeFiles/cmTC_b8a0d.dir/testCXXCompiler.cxx.o -c testCXXCompiler.cxx
+CMake Error: The source directory "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/out/build/WSL-GCC-Debug/CMakeFiles/CMakeTmp/-c" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+ninja: build stopped: subcommand failed.
+
+
+

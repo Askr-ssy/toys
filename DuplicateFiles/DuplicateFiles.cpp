@@ -2,20 +2,33 @@
 //
 
 #include "DuplicateFiles.h"
+//#include "md5.hpp"
 #include <filesystem>
 #include <iostream>
 #include <vector>
 #include <map>
+
 #include <iostream>
 namespace fs = std::filesystem;
 using namespace std;
 
 std::vector<fs::path> find_all_file(const fs::path &path, vector<fs::path> &allfile)
 {
-    for (auto &p : fs::recursive_directory_iterator(path))
+    for (auto &p : fs::recursive_directory_iterator(path, fs::directory_options::skip_permission_denied))
     {
-        // cout<<p.path()<<endl;
-        allfile.push_back(p.path());
+        try
+        {
+            cout << p.path() << endl;
+            allfile.push_back(p.path());
+        }
+        catch (const std::exception& err)
+        {
+            cout << p.path() << endl;
+            cout << err.what() << endl;
+            continue;
+        }
+        
+        
     }
     return allfile;
 }
@@ -46,7 +59,6 @@ int main(int argc, char **argv)
     {
         find_all_file(path, allfile);
         cout << "查找完成,共:" << allfile.size() << "个文件 " << endl;
-        ;
     }
     catch (exception &err)
     {
