@@ -60,15 +60,15 @@ include CMakeFiles/DuplicateFiles.dir/flags.make
 CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.o: CMakeFiles/DuplicateFiles.dir/flags.make
 CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.o: ../DuplicateFiles.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/askr/Documents/github/toys/DuplicateFiles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.o -c /home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.cpp
+	/bin/g++-9  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.o -c /home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.cpp
 
 CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.cpp > CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.i
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.cpp > CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.i
 
 CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.cpp -o CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.s
+	/bin/g++-9 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.cpp -o CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.s
 
 # Object files for target DuplicateFiles
 DuplicateFiles_OBJECTS = \

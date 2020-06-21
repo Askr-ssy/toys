@@ -7,6 +7,10 @@
 #include <iostream>
 #include <vector>
 #include <unordered_set>
+#include<map>
+#include<unordered_map>
+#include<thread>
+
 
 #include <iostream>
 namespace fs = std::filesystem;
@@ -53,10 +57,11 @@ int main(int argc, char **argv)
         exit(1);
     }
 
-    std::unordered_set<std::string> md5_set{};
+    std::unordered_map<std::string,std::string> md5_to_path{};
+    std::map<string,string> Df{};
     fs::path path = fs::canonical(findpath);
     vector<fs::path> allfile{};
-    long long sum_filesize{};
+    // long long sum_filesize{};
     try
     {
         find_all_file(path, allfile);
@@ -68,16 +73,18 @@ int main(int argc, char **argv)
     for (fs::path &path : allfile)
     {
         std::string _md5 = get_md5hash(path.string());
-        // cout<<_md5<<endl;
-        if (md5_set.contains(_md5)){
-            cout<<"path is DuplicateFiles"<<endl;
-            cout<<path<<endl;
+        if (md5_to_path.contains(_md5)){
+            Df[path.string()] = md5_to_path[_md5];
         }
         else
         {
-            md5_set.insert(_md5);
+            md5_to_path[_md5]=path.string();
         }
         
+    }
+    for (auto &p : Df){
+        cout<<"DuplicateFiles"<<endl;
+        cout<<p.first<<endl<<p.second<<endl;
     }
     return 0;
 }
