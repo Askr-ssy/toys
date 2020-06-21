@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/DuplicateFiles.cpp" "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/build/CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.o"
+  "/home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.cpp" "/home/askr/Documents/github/toys/DuplicateFiles/build/CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -2,11 +2,11 @@
 //
 
 #include "DuplicateFiles.h"
-//#include "md5.hpp"
+#include "md5.hpp"
 #include <filesystem>
 #include <iostream>
 #include <vector>
-#include <map>
+#include <unordered_set>
 
 #include <iostream>
 namespace fs = std::filesystem;
@@ -18,17 +18,18 @@ std::vector<fs::path> find_all_file(const fs::path &path, vector<fs::path> &allf
     {
         try
         {
-            cout << p.path() << endl;
+            if (fs::is_directory(p)){
+                continue;
+            }
+            // cout << p.path() << endl;
             allfile.push_back(p.path());
         }
-        catch (const std::exception& err)
+        catch (const std::exception &err)
         {
             cout << p.path() << endl;
             cout << err.what() << endl;
             continue;
         }
-        
-        
     }
     return allfile;
 }
@@ -39,30 +40,44 @@ int main(int argc, char **argv)
         cerr << "path not found" << endl;
         exit(1);
     }
-    std::string path{argv[1]};
+    fs::path findpath{argv[1]};
 
-    vector<fs::path> allfile{};
-    long long sum_filesize{};
-
-    if (!fs::exists(path))
+    if (!fs::exists(findpath))
     {
         cerr << "path error:not found" << endl;
         exit(1);
     }
-    if (!fs::is_directory(path))
+    if (!fs::is_directory(findpath))
     {
         cerr << "path is a file" << endl;
         exit(1);
     }
 
+    std::unordered_set<std::string> md5_set{};
+    fs::path path = fs::canonical(findpath);
+    vector<fs::path> allfile{};
+    long long sum_filesize{};
     try
     {
         find_all_file(path, allfile);
-        cout << "查找完成,共:" << allfile.size() << "个文件 " << endl;
     }
     catch (exception &err)
     {
         cerr << err.what() << endl;
+    }
+    for (fs::path &path : allfile)
+    {
+        std::string _md5 = get_md5hash(path.string());
+        // cout<<_md5<<endl;
+        if (md5_set.contains(_md5)){
+            cout<<"path is DuplicateFiles"<<endl;
+            cout<<path<<endl;
+        }
+        else
+        {
+            md5_set.insert(_md5);
+        }
+        
     }
     return 0;
 }

@@ -6,21 +6,39 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/DuplicateFiles.cpp
+../include/md5.hpp
+openssl/md5.h
+-
+string
+-
+sstream
+-
+iomanip
+-
+filesystem
+-
+fstream
+-
+iostream
+-
+
+/home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.cpp
 DuplicateFiles.h
-/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/DuplicateFiles.h
+/home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.h
+md5.hpp
+/home/askr/Documents/github/toys/DuplicateFiles/md5.hpp
 filesystem
 -
 iostream
 -
 vector
 -
-map
+unordered_set
 -
 iostream
 -
 
-/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/DuplicateFiles.h
+/home/askr/Documents/github/toys/DuplicateFiles/DuplicateFiles.h
 iostream
 -
 

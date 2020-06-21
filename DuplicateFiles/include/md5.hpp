@@ -1,15 +1,15 @@
 
+#ifndef _DF_MD5_HEADER_
+#define _DF_MD5_HEADER_
 #include <openssl/md5.h>
-
 #include <string>
 #include <sstream>
 #include <iomanip>
-
+#include <filesystem>
 #include <fstream>
-#include<iostream>
+#include <iostream>
 #define BUFFSIZE 16384
 
-using namespace std;
 std::string get_md5hash(const std::string &fname)
 {
 
@@ -50,11 +50,4 @@ std::string get_md5hash(const std::string &fname)
 
     return md5string;
 }
-int main(int argc,char *argv[]){
-    std::string md5str{""};
-    if (argc<1)
-        exit(1);
-    md5str = get_md5hash(string{argv[0]});
-    cout<<md5str<<endl;
-    return 0;
-}
+#endif // !_MD5_HEADER_
