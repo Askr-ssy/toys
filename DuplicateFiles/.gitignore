@@ -1,0 +1,12 @@
+*.x
+.vscode
+.vs
+build/*
+debug/*
+*.sln
+*.vcxproj
+*.vcxproj.*
+*.whl
+*.out
+
+pyvenv/*
