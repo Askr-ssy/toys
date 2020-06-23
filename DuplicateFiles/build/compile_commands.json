@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/build",
+  "command": "/bin/g++-9   -I.././include  -g   -O3 -g -std=c++17 -o CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.o -c /mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/DuplicateFiles.cpp",
+  "file": "/mnt/c/Users/askr/Documents/GitHub/toys/DuplicateFiles/DuplicateFiles.cpp"
+}
+]

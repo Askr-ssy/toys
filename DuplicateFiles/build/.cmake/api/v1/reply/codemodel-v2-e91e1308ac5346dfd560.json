@@ -18,7 +18,7 @@
 					]
 				}
 			],
-			"name" : "",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -38,7 +38,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "DuplicateFiles::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DuplicateFiles-3037d5379370ef070e42.json",
+					"jsonFile" : "target-DuplicateFiles-Debug-d93f8f99b7af79bb84ed.json",
 					"name" : "DuplicateFiles",
 					"projectIndex" : 0
 				}
