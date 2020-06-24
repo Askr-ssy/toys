@@ -3,17 +3,17 @@ syntax = "proto3";
 package rpc_package;
 
 // define a service
-service HelloWorldService {
+service TimeService {
     // define the interface and data type
-    rpc SayHello (HelloRequest) returns (HelloReply) {}
+    rpc SayHello (TimeRequest) returns (HelloReply) {}
 }
 
 // define the data type of request
-message HelloRequest {
-    string name = 1;
+message TimeRequest {
+    string  tz= 1;
 }
 
 // define the data type of response
 message HelloReply {
-    string message = 1;
+    string time = 1;
 }
