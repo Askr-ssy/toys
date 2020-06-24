@@ -1,1 +1,1 @@
-/bin/g++-9     CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.o  -o DuplicateFiles  -lssl -lcrypto 
+/bin/g++-9  -O3 -DNDEBUG   CMakeFiles/DuplicateFiles.dir/DuplicateFiles.cpp.o  -o DuplicateFiles  -lssl -lcrypto 
