@@ -1,15 +1,22 @@
 // #include "include/boost"
-#include "boost/lambda/lambda.hpp"
-
 #include <iostream>
 #include <iterator>
 #include <algorithm>
 
+#include <boost/asio.hpp>
+#include <boost/lambda/lambda.hpp>
+
+#include "http_server.hpp"
+
+
+
+
 int main()
 {
-    using namespace boost::lambda;
-    typedef std::istream_iterator<int> in;
+	try {
 
-    std::for_each(
-        in(std::cin), in(), std::cout << (_1 * 3) << " " );
+	}
+	catch (std::exception &e){
+		std::cerr << "exception is " << e.what() << std::endl;
+	}
 }
