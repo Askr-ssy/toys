@@ -1,3 +1,0 @@
-/home/askr/Documents/github/toys/DuplicateFiles/build/CMakeFiles/rebuild_cache.dir
-/home/askr/Documents/github/toys/DuplicateFiles/build/CMakeFiles/edit_cache.dir
-/home/askr/Documents/github/toys/DuplicateFiles/build/CMakeFiles/DuplicateFiles.dir
